@@ -1,5 +1,6 @@
 import dataclasses
 from dataclasses import field
+from typing import Optional
 
 import game.packets
 from common.ctype import ctype
@@ -20,7 +21,7 @@ class Character(Playable):
     template: CharacterTemplate
     attacked_by: list = field(default_factory=list)
 
-    last_skill: Skill = field(default_factory=Skill)
+    last_skill: Skill = Optional[field(default_factory=Skill)]
     last_heal_amount: ctype.int32 = 0
     title: str = ""
     ai_class: str = ""

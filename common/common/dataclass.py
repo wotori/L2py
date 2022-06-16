@@ -38,6 +38,8 @@ class BaseDataclass:
                 for item in value:
                     if isinstance(item, item_type):
                         list_items.append(item)
+                    elif not dataclasses.is_dataclass(item_type):
+                        list_items.append(item_type(item))                    
                     else:
                         list_items.append(item_type(**item))
                 value = list_items

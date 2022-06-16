@@ -79,3 +79,17 @@ Data types
 ----------
 
 Most of the custom data types derive from ctypes (At least numeric ones.)
+
+L2 client configuration
+----------
+
+- edit config system/l2.ini
+```
+Port=<Port>
+ServerAddr=<ServerAddr>
+```
+
+- setp resolution e.t.c.
+
+
+- disable game guard patching system/Core.dll

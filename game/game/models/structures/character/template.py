@@ -37,8 +37,8 @@ class CharacterTemplate(BaseDataclass):
     level_up_gain: LevelUpGain
     spawn: Point3D
 
-    collision_radius: ctype.double
-    collision_height: ctype.double
+    collision_radius: ctype.float
+    collision_height: ctype.float
     load: ctype.int32
 
     mp_consume_rate: ctype.int32

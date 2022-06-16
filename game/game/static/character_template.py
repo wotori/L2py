@@ -21,8 +21,8 @@ class StaticCharacterTemplate(StaticData):
     can_craft: ctype.int8
     male_unk1: ctype.float
     male_unk2: ctype.float
-    male_collision_radius: ctype.double
-    male_collision_height: ctype.double
+    male_collision_radius: ctype.float
+    male_collision_height: ctype.float
     female_unk1: ctype.float
     female_unk2: ctype.float
     female_collision_radius: ctype.float
@@ -30,7 +30,7 @@ class StaticCharacterTemplate(StaticData):
     level_up_gain: LevelUpGain
     base_level: ctype.int32
 
-    __filepath__ = "data/char_templates.json"
+    __filepath__ = "game/game/data/char_templates.json"
 
     __encode__ = ["race_id", "class_id", ""]
 

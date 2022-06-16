@@ -15,10 +15,10 @@ from common.models.id_factory import IDFactory
 @dataclasses.dataclass(kw_only=True)
 class GameAuth(BaseDataclass):
     server_id: ctype.char = 0
-    play_ok1: ctype.int32 = field(default_factory=ctype.int.random)
-    play_ok2: ctype.int32 = field(default_factory=ctype.int.random)
-    login_ok1: ctype.int32 = field(default_factory=ctype.int.random)
-    login_ok2: ctype.int32 = field(default_factory=ctype.int.random)
+    play_ok1: ctype.int32 = field(default_factory=ctype.int32.random)
+    play_ok2: ctype.int32 = field(default_factory=ctype.int32.random)
+    login_ok1: ctype.int32 = field(default_factory=ctype.int32.random)
+    login_ok2: ctype.int32 = field(default_factory=ctype.int32.random)
 
 
 @dataclasses.dataclass(kw_only=True)
