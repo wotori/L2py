@@ -10,7 +10,7 @@ from game.models.world import WORLD
 LOG = logging.getLogger(f"L2py.game")
 
 
-def main():
+def run_game_server():
     GAME_SERVER_APPLICATION.run(
         {
             "game_web": {
@@ -28,4 +28,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run_game_server()

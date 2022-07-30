@@ -14,7 +14,7 @@ from login.config import (
 LOG = logging.getLogger(f"L2py.login")
 
 
-def main():
+def run_login_server():
     LOGIN_SERVER_APPLICATION.run(
         {
             "login_web": {
@@ -32,4 +32,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run_login_server()
